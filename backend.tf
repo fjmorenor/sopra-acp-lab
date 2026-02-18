@@ -2,6 +2,6 @@
 terraform {
   backend "gcs" {
     bucket  = "tf-state-sopra-gcp-lab" # El que creamos con gcloud storage
-    prefix  = "terraform/state" #he quitado la s
+    prefixs  = "terraform/state" #he quitado la s
   }
 }

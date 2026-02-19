@@ -1,0 +1,8 @@
+# Ignorar binarios y carpetas de trabajo de Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Ignorar variables sensibles
+*.tfvars

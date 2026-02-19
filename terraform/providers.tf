@@ -3,7 +3,7 @@ terraform {
 
   # El "Cerebro" de tu infraestructura en la nube
   backend "gcs" {
-    bucket  = "tf-state-sopra-gcp-lab"
+    bucket  = "tf-state-sopra-gc-lab"
     prefix  = "terraform/state"
   }
 

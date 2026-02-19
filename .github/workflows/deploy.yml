@@ -25,6 +25,12 @@ jobs:
     - name: 'Set up Cloud SDK'
       uses: 'google-github-actions/setup-gcloud@v2'
 
+    # ESTE ES EL PASO QUE TE FALTA:
+    - name: 'Setup Terraform'
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: "1.5.0"
+
     - name: 'Terraform Init'
       run: terraform init
       working-directory: ./terraform
